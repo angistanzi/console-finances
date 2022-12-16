@@ -1,4 +1,4 @@
-var finances = [
+let finances = [
 ['Jan-2010', 867884],
 ['Feb-2010', 984655],
 ['Mar-2010', 322013],
@@ -86,3 +86,16 @@ var finances = [
 ['Jan-2017', 138230],
 ['Feb-2017', 671099]
 ];
+
+
+console.log(finances.length);
+
+let total = 0;
+
+for(i=0; i < finances.length; i++) {
+    total += finances[i][1]
+};
+
+console.log(total);
+
+
