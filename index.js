@@ -87,9 +87,10 @@ let finances = [
 ['Feb-2017', 671099]
 ];
 
-
+// Total months //
 console.log(finances.length);
 
+// Sum of months //
 let total = 0;
 
 for(i=0; i < finances.length; i++) {
@@ -98,4 +99,26 @@ for(i=0; i < finances.length; i++) {
 
 console.log(total);
 
+// Average of changes between months //
 
+let average = 0;
+let totalAvg = 0;
+let avgArray = [];
+
+for (i = 0; i < finances.length; i++) {
+    if (i >= 1){
+    avgArray.push((finances[i][1] - finances[i-1][1]))
+}};
+
+
+for(i = 0; i <avgArray.length; i++){
+    totalAvg += avgArray[i]
+};
+
+average = totalAvg/85;
+
+console.log(average);
+
+console.log(totalAvg);
+
+console.log(avgArray.length)
