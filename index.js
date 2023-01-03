@@ -115,6 +115,21 @@ for(i = 0; i <avgArray.length; i++){
     totalAvg += avgArray[i]
 };
 
+
+// Greatest increase between months //
+
+max = avgArray[0];
+
+for(i = 0; i <avgArray.length; i++){
+    if (avgArray[i]>max )
+    max = avgArray[i];
+};
+
+
+// Answers //
+
+
+
 average = totalAvg/85;
 
 console.log(average);
@@ -122,3 +137,5 @@ console.log(average);
 console.log(totalAvg);
 
 console.log(avgArray.length)
+
+console.log(max)
