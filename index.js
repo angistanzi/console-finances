@@ -87,19 +87,19 @@ let finances = [
 ['Feb-2017', 671099]
 ];
 
-// Total months //
-console.log(finances.length);
+// TOTAL # MONTHS //
+// console.log(finances.length);
 
-// Sum of months //
+// TOTAL SUM //
 let total = 0;
 
 for(i=0; i < finances.length; i++) {
     total += finances[i][1]
 };
 
-console.log(total);
+// console.log(total);
 
-// Average of changes between months //
+// AVERAGE CHANGE //
 
 let average = 0;
 let totalAvg = 0;
@@ -116,7 +116,7 @@ for(i = 0; i <avgArray.length; i++){
 };
 
 
-// Greatest increase between months //
+// GREATEST INCREASE //
 
 max = avgArray[0];
 
@@ -126,16 +126,40 @@ for(i = 0; i <avgArray.length; i++){
 };
 
 
-// Answers //
+
+// GREATEST DECREASE //
+
+min = avgArray[0];
+
+for(i = 0; i <avgArray.length; i++){
+    if (avgArray[i]<min)
+    min = avgArray[i];
+};
+
+
+// ANSWERS //
+
+// console.log(average);
+
+// console.log(totalAvg);
+
+// console.log(avgArray.length)
+
+// console.log(max)
+
+// console.log(min)
 
 
 
 average = totalAvg/85;
 
-console.log(average);
 
-console.log(totalAvg);
+let financialAnalysis = "Total Months: " + finances.length + "\n" +
+    "Total Sum: " + total + "\n" +
+    "Average Change: " + average + "\n" +
+    "Greatest increase in profits: " + max + "\n" +
+    "Greatest decrease in profits: " + min;
 
-console.log(avgArray.length)
 
-console.log(max)
+
+console.log (financialAnalysis);
