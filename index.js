@@ -125,8 +125,6 @@ for(i = 0; i <avgArray.length; i++){
     max = avgArray[i];
 };
 
-
-
 // GREATEST DECREASE //
 
 min = avgArray[0];
@@ -154,7 +152,9 @@ for(i = 0; i <avgArray.length; i++){
 average = totalAvg/85;
 
 
-let financialAnalysis = "Total Months: " + finances.length + "\n" +
+let financialAnalysis = "Financial Analysis" + "\n" +
+    "______________________" + "\n" + "\n" +
+    "Total Months: " + finances.length + "\n" +
     "Total Sum: " + total + "\n" +
     "Average Change: " + average + "\n" +
     "Greatest increase in profits: " + max + "\n" +
