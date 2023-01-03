@@ -14,4 +14,4 @@ You can view the assignment deployed here: https://angistanzi.github.io/console-
 
 If you open the console, you will see the following: 
  
-![Challenge Answers](./Screenshot%202023-01-03%20at%208.45.04%20PM.png)
+![Challenge Answers](./Screenshot%202023-01-03%20at%209.01.27%20PM.png)
